@@ -1,0 +1,422 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+}
+img {
+  max-width: 100%;
+}
+
+/**************
+Disclaimer Bar
+**************/
+
+header {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  position: sticky;
+  top: 0;
+}
+header.disclaimer img {
+  background: rgb(255, 255, 255);
+  width: 18px;
+  margin: 0;
+  padding: 2px 9px 2px 10px; /* Padding: top right bottom left */
+  vertical-align: middle;
+}
+
+/**************
+Menu
+**************/
+
+#wrapper {
+  width: 1200px;
+  margin: 25px auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.topbar {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  padding: 1px 0 0 0;
+}
+
+.logo {
+  background: white;
+}
+
+.logo img {
+  width: 240px;
+  margin: 0 auto;
+  padding: 20px 35px 0 0px; /* Padding: top right bottom left */
+  vertical-align: middle;
+}
+
+.menu {
+  background: white;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  color: black;
+  vertical-align: middle;
+  font-size: 20px;
+  padding: 10px 30px 10px 10px;
+}
+
+.login:hover {
+  background-color: #9b0101;
+}
+
+.login:active {
+  background-color: red;
+  transform: translateY(4px);
+  border-style: outset;
+}
+
+.login {
+  background: red;
+  color: white;
+  border-radius: 8px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.login img {
+  width: 100px;
+  margin: 0;
+  padding: 2px 2px 2px 2px; /* Padding: top right bottom left */
+  vertical-align: middle;
+}
+
+/**************
+Content
+**************/
+
+.container {
+  width: 1200px;
+  margin: 25px auto;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container img {
+  background: white;
+  opacity: 0.38;
+  width: 100%;
+  margin: 0 0 0 40px;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.left-content span {
+  font-weight: normal;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.right-content {
+  position: relative;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.centered {
+  position: absolute;
+  top: 36%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.text-slide > div {
+  display: inline-block;
+  text-align: left;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text span {
+  display: block;
+}
+
+.text {
+  position: relative;
+  width: 400px;
+  animation: text-animation ease 9s infinite;
+}
+
+/**************
+Banner
+**************/
+
+.banner {
+  background-color: rgb(49, 47, 47);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.tips-title {
+  background-color: rgb(49, 47, 47);
+  font-size: 50px;
+  height: 80px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.tips {
+  display: flex;
+  flex-direction: row;
+  padding: 18px 100px 100px 100px;
+}
+
+.tips figure {
+  margin: auto;
+  width: 450px;
+  text-align: center;
+  font-size: 23px;
+}
+
+.tips figure img {
+  width: 500px;
+  padding: 0 0 20px 0;
+}
+
+/**************
+Slideshow
+**************/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  background-color: #ffffff;
+}
+
+.wrapper1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 50px 0;
+}
+
+.container1 {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+  width: 90px;
+  border-radius: 0.75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: 0.3s;
+  transition: all 0.3s ease;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+  font-size: 30px;
+  background-color: rgba(104, 104, 104, 0.6);
+  padding: 5px 10px;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 1100px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+  background-image: url("gallery/1.jpg");
+}
+.card[for="c2"] {
+  background-image: url("gallery/2.jpg");
+}
+.card[for="c3"] {
+  background-image: url("gallery/3.jpg");
+}
+.card[for="c4"] {
+  background-image: url("gallery/4.jpg");
+}
+.card[for="c5"] {
+  background-image: url("gallery/5.jpg");
+}
+
+/**************
+Footer
+**************/
+
+footer {
+  background: rgb(116, 115, 115);
+  height: 150px;
+  align-items: center;
+}
+
+footer img {
+  width: 150px;
+  margin: 0;
+  padding: 30px 0 10px 10px;
+  vertical-align: middle;
+}
+
+footer div {
+  color: white;
+  background-color: darkred;
+  margin: 0;
+  padding: 10px 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+/**************
+Animation
+**************/
+
+@keyframes text-animation {
+  0% {
+    top: 0;
+  }
+
+  10% {
+    top: 0;
+  }
+
+  20% {
+    top: 0;
+  }
+
+  30% {
+    top: -40px;
+  }
+
+  40% {
+    top: -40px;
+  }
+
+  50% {
+    top: -40px;
+  }
+
+  60% {
+    top: -80px;
+  }
+
+  70% {
+    top: -80px;
+  }
+
+  80% {
+    top: -80px;
+  }
+
+  90% {
+    top: 0;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+a {
+  color: black;
+  font-weight: bold;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
